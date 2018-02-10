@@ -1,5 +1,4 @@
 # Crystals Collector Game!
-## week-4-game
 
 * Four crystals are displayed on the page.
 
