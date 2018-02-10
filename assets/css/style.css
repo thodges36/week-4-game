@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(109, 184, 184);
+    background-color: rgb(165, 214, 214);
 }
 
 #header{
@@ -9,8 +9,11 @@ body{
     text-align: center;
     font-size: 2em;
     padding: 20px 0;
+    overflow: auto;
+
 
 }
+
 
 #main-container{
     background-color: rgb(226, 207, 183);
@@ -21,18 +24,28 @@ body{
 
 }
 
-#random-number-container{
-    background-color: green;
+#row{
+    width: 100%;
+  }
+
+#target-number-container{
+    background-color: rgb(32, 165, 32);
     width: 20%;
     color: rgb(95, 2, 95);
     padding: 5px;
+    font-size: 1.5em;
+    height: 100px; 
 }
 
+
+
 #wins-losses-container{
-    background-color: rgb(86, 197, 197);
+    background-color: rgb(121, 248, 248);
     color: rgb(5, 5, 85);
     width: 15%;
     padding: 5px;
+    margin: 5px 0;
+    
 }
 
 .jewel{

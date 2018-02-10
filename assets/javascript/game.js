@@ -14,28 +14,37 @@ $(document).ready(function () {
         console.log("Target number is " + targetNumber);
 
         // Set the target number container to show the targetNumber.
-        $("#target-number-container").html("Target Number: " + targetNumber);
+        $("#target-number-container").html( targetNumber);
     }
 
-    //Calls the random number for the jewels (between 1 and 12)
-    function randomJewelGenerator() {
+    //Functions to generator random number for the jewels (between 1 and 12)
+    function pinkJewelGenerator() {
         pinkJewel = Math.round(Math.random() * 12) + 1;
         console.log("Pink jewel is: " + pinkJewel);
-
-        blueJewel = Math.round(Math.random() * 12) + 1;
-        console.log("Blue jewel is: " + pinkJewel);
-
-        yellowJewel = Math.round(Math.random() * 12) + 1;
-        console.log("Yellow jewel is: " + pinkJewel);
-
-        greenJewel = Math.round(Math.random() * 12) + 1;
-        console.log("Green jewel is: " + pinkJewel);
-
     }
+
+    function blueJewelGenerator() {
+        blueJewel = Math.round(Math.random() * 12) + 1;
+        console.log("Blue jewel is: " + blueJewel);
+    }
+
+    function yellowJewelGenerator() {
+        yellowJewel = Math.round(Math.random() * 12) + 1;
+        console.log("Yellow jewel is: " + yellowJewel);
+    }
+
+    function greenJewelGenerator() {
+        greenJewel = Math.round(Math.random() * 12) + 1;
+        console.log("Green jewel is: " + greenJewel);
+    }
+
 
     //Call the functions to start game
     targetNumberGenerator();
-    randomJewelGenerator();
+    pinkJewelGenerator();
+    blueJewelGenerator();
+    yellowJewelGenerator();
+    greenJewelGenerator();
 
     //Variable for total scores, wins, losses
     var totalScore = 0;
@@ -53,9 +62,13 @@ $(document).ready(function () {
             wins = wins + 1;
             $("#wins").html(wins);
             targetNumberGenerator();
-            randomJewelGenerator();
+            pinkJewelGenerator();
+            blueJewelGenerator();
+            yellowJewelGenerator();
+            greenJewelGenerator();
             totalScore = 0;
             $("#totalScore").html(totalScore);
+            alert("You won!");
         }
 
         // If not, you lose 
@@ -63,9 +76,13 @@ $(document).ready(function () {
             losses = losses + 1;
             $("#losses").html(losses);
             targetNumberGenerator();
-            randomJewelGenerator();
+            pinkJewelGenerator();
+            blueJewelGenerator();
+            yellowJewelGenerator();
+            greenJewelGenerator();
             totalScore = 0;
             $("#totalScore").html(totalScore);
+            alert("You lost!");
         }
     })
 
@@ -80,7 +97,10 @@ $(document).ready(function () {
             wins = wins + 1;
             $("#wins").html(wins);
             targetNumberGenerator();
-            randomJewelGenerator();
+            pinkJewelGenerator();
+            blueJewelGenerator();
+            yellowJewelGenerator();
+            greenJewelGenerator();
             totalScore = 0;
             $("#totalScore").html(totalScore);
         }
@@ -90,7 +110,10 @@ $(document).ready(function () {
             losses = losses + 1;
             $("#losses").html(losses);
             targetNumberGenerator();
-            randomJewelGenerator();
+            pinkJewelGenerator();
+            blueJewelGenerator();
+            yellowJewelGenerator();
+            greenJewelGenerator();
             totalScore = 0;
             $("#totalScore").html(totalScore);
         }
@@ -106,7 +129,10 @@ $(document).ready(function () {
             wins = wins + 1;
             $("#wins").html(wins);
             targetNumberGenerator();
-            randomJewelGenerator();
+            pinkJewelGenerator();
+            blueJewelGenerator();
+            yellowJewelGenerator();
+            greenJewelGenerator();
             totalScore = 0;
             $("#totalScore").html(totalScore);
         }
@@ -116,7 +142,10 @@ $(document).ready(function () {
             losses = losses + 1;
             $("#losses").html(losses);
             targetNumberGenerator();
-            randomJewelGenerator();
+            pinkJewelGenerator();
+            blueJewelGenerator();
+            yellowJewelGenerator();
+            greenJewelGenerator();
             totalScore = 0;
             $("#totalScore").html(totalScore);
         }
@@ -132,7 +161,10 @@ $(document).ready(function () {
             wins = wins + 1;
             $("#wins").html(wins);
             targetNumberGenerator();
-            randomJewelGenerator();
+            pinkJewelGenerator();
+            blueJewelGenerator();
+            yellowJewelGenerator();
+            greenJewelGenerator();
             totalScore = 0;
             $("#totalScore").html(totalScore);
         }
@@ -142,10 +174,13 @@ $(document).ready(function () {
             losses = losses + 1;
             $("#losses").html(losses);
             targetNumberGenerator();
-            randomJewelGenerator();
+            pinkJewelGenerator();
+            blueJewelGenerator();
+            yellowJewelGenerator();
+            greenJewelGenerator();
             totalScore = 0;
             $("#totalScore").html(totalScore);
         }
     })
-    
+
 })
